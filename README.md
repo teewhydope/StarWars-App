@@ -1,6 +1,8 @@
-# JoyFin-KMM
+# Starwarz-App-KMM
 
 A Kotlin Multiplatform Mobile Project that demonstrates code sharing between iOS and Android apps.
+
+This project was built using Android Studio Meerkat | 2024.3.1 Patch 1.
 
 ### Features
 
@@ -9,10 +11,9 @@ A Kotlin Multiplatform Mobile Project that demonstrates code sharing between iOS
 - [Shared Business Logic](https://github.com/teewhydope/JoyFin-KMM/tree/main/common)
 - Native
   UI ([Android XML](https://github.com/teewhydope/JoyFin-KMM/tree/main/app-ui/src/main/java/com/teewhydope/app)
-  and [UIKIT](https://github.com/teewhydope/JoyFin-KMM/tree/main/iosApp/iosApp/ViewController))
-- [Androidx](https://github.com/teewhydope/JoyFin-KMM/tree/main/iosApp/iosApp/ViewController) & [Swift](https://github.com/teewhydope/JoyFin-KMM/tree/main/iosApp/iosApp/Presentation/Login)
-  Viewmodels
-- Hilt DI (Android)/ Manual DI (iOS)
+  and [SwiftUi](https://github.com/teewhydope/JoyFin-KMM/tree/main/iosApp/iosApp/ViewController))
+- Shared Viewmodel
+- Koin Di
 
 ## Building iOS Data
 
@@ -21,8 +22,3 @@ A Kotlin Multiplatform Mobile Project that demonstrates code sharing between iOS
 ```
 > ./gradlew common:ios-data:build 
 ```
-
-- Username: teewhy@mobiledev.com
-- Password: teewhydope
-
-<img src="https://github.com/teewhydope/JoyFin-KMM/blob/main/assets/Screenshot_20240319_225826.png" width="200">  <img src="https://github.com/teewhydope/JoyFin-KMM/blob/main/assets/Screenshot_20240319_211512.png" width="200">  <img src="https://github.com/teewhydope/JoyFin-KMM/blob/main/assets/Screenshot_20240319_225827.png" width="200">  <img src="https://github.com/teewhydope/JoyFin-KMM/blob/main/assets/Screenshot_20240319_225828.png" width="200">
