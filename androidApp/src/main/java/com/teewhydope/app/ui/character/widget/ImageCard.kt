@@ -35,7 +35,7 @@ fun ImageCard(
         Column(modifier = Modifier.padding(16.dp)) {
             AsyncImage(
                 model = model.image,
-                contentDescription = model.image,
+                contentDescription = model.name,
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(180.dp),

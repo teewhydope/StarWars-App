@@ -22,6 +22,7 @@ class PersonDetailViewModel : BaseViewModel<PersonDetailViewState, PresentationN
 
 
     fun fetchPersonDetail(id: Int) {
+        updateState(PersonDetailViewState.Loading)
         getPersonDetailUseCase(
             value = id,
             onResult = { domainModel ->

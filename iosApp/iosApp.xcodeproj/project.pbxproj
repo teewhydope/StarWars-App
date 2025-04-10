@@ -16,6 +16,12 @@
 		F74CB8182DA7162000617249 /* PersonDetailPresentationToUiModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CB8172DA7161E00617249 /* PersonDetailPresentationToUiModelMapper.swift */; };
 		F74CB81B2DA7173D00617249 /* PersonDetailUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CB81A2DA7173C00617249 /* PersonDetailUiModel.swift */; };
 		F74CB81D2DA718E000617249 /* PeopleUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74CB81C2DA718DF00617249 /* PeopleUiModel.swift */; };
+		F74DBABD2DA8197D003B71F6 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBABC2DA81979003B71F6 /* ViewExtension.swift */; };
+		F74DBABF2DA82404003B71F6 /* PersonDetailErrorPresentationToUiExceptionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBABE2DA82402003B71F6 /* PersonDetailErrorPresentationToUiExceptionMapper.swift */; };
+		F74DBAC22DA825DE003B71F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74DBAC02DA825DE003B71F6 /* Localizable.strings */; };
+		F74DBAC42DA82708003B71F6 /* PeopleListErrorPresentationToUiExceptionMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBAC32DA826FF003B71F6 /* PeopleListErrorPresentationToUiExceptionMapper.swift */; };
+		F74DBAC72DA84492003B71F6 /* PeopleListContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBAC62DA8448D003B71F6 /* PeopleListContent.swift */; };
+		F74DBACA2DA849DF003B71F6 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74DBAC92DA849D0003B71F6 /* StringUtil.swift */; };
 		F76878C32DA6DE1A00817754 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F7A071802BAA26D90019CFEF /* Config.xcconfig */; };
 		F7D7BFF02DA602C7007A76AF /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7BFEF2DA602C4007A76AF /* iOSApp.swift */; };
 		F7D7BFF62DA60ECA007A76AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7BFF52DA60ECA007A76AF /* ContentView.swift */; };
@@ -46,6 +52,12 @@
 		F74CB8172DA7161E00617249 /* PersonDetailPresentationToUiModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailPresentationToUiModelMapper.swift; sourceTree = "<group>"; };
 		F74CB81A2DA7173C00617249 /* PersonDetailUiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailUiModel.swift; sourceTree = "<group>"; };
 		F74CB81C2DA718DF00617249 /* PeopleUiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleUiModel.swift; sourceTree = "<group>"; };
+		F74DBABC2DA81979003B71F6 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		F74DBABE2DA82402003B71F6 /* PersonDetailErrorPresentationToUiExceptionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailErrorPresentationToUiExceptionMapper.swift; sourceTree = "<group>"; };
+		F74DBAC12DA825DE003B71F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F74DBAC32DA826FF003B71F6 /* PeopleListErrorPresentationToUiExceptionMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListErrorPresentationToUiExceptionMapper.swift; sourceTree = "<group>"; };
+		F74DBAC62DA8448D003B71F6 /* PeopleListContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListContent.swift; sourceTree = "<group>"; };
+		F74DBAC92DA849D0003B71F6 /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
 		F7A071802BAA26D90019CFEF /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		F7D7BFEF2DA602C4007A76AF /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		F7D7BFF52DA60ECA007A76AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +110,7 @@
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
+				F74DBAC02DA825DE003B71F6 /* Localizable.strings */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 		F74CB8092DA70ECB00617249 /* People */ = {
 			isa = PBXGroup;
 			children = (
+				F74DBAC52DA8447A003B71F6 /* Widget */,
 				F74CB8192DA7173600617249 /* Model */,
 				F74CB80E2DA7150D00617249 /* Mapper */,
 				F74CB80C2DA70EF300617249 /* PersonDetailScreen.swift */,
@@ -123,6 +137,8 @@
 		F74CB80E2DA7150D00617249 /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				F74DBAC32DA826FF003B71F6 /* PeopleListErrorPresentationToUiExceptionMapper.swift */,
+				F74DBABE2DA82402003B71F6 /* PersonDetailErrorPresentationToUiExceptionMapper.swift */,
 				F74CB8172DA7161E00617249 /* PersonDetailPresentationToUiModelMapper.swift */,
 				F74CB80F2DA7151400617249 /* PeoplePresentationToUiModelMapper.swift */,
 			);
@@ -132,6 +148,8 @@
 		F74CB8112DA7155A00617249 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F74DBAC82DA849C9003B71F6 /* Util */,
+				F74DBABB2DA81972003B71F6 /* Extension */,
 				F74CB8142DA715D300617249 /* Mapper */,
 			);
 			path = Common;
@@ -152,6 +170,30 @@
 				F74CB81A2DA7173C00617249 /* PersonDetailUiModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F74DBABB2DA81972003B71F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F74DBABC2DA81979003B71F6 /* ViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F74DBAC52DA8447A003B71F6 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				F74DBAC62DA8448D003B71F6 /* PeopleListContent.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		F74DBAC82DA849C9003B71F6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F74DBAC92DA849D0003B71F6 /* StringUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		F7A071822BAA2D660019CFEF /* Configuration */ = {
@@ -228,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F76878C32DA6DE1A00817754 /* Config.xcconfig in Resources */,
+				F74DBAC22DA825DE003B71F6 /* Localizable.strings in Resources */,
 				058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */,
 				058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */,
 			);
@@ -262,10 +305,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74CB80B2DA70ED800617249 /* PeopleListScreen.swift in Sources */,
+				F74DBABF2DA82404003B71F6 /* PersonDetailErrorPresentationToUiExceptionMapper.swift in Sources */,
+				F74DBAC72DA84492003B71F6 /* PeopleListContent.swift in Sources */,
 				F74CB8102DA7151600617249 /* PeoplePresentationToUiModelMapper.swift in Sources */,
 				F74CB8182DA7162000617249 /* PersonDetailPresentationToUiModelMapper.swift in Sources */,
 				F74CB80D2DA70EFC00617249 /* PersonDetailScreen.swift in Sources */,
+				F74DBABD2DA8197D003B71F6 /* ViewExtension.swift in Sources */,
 				F74CB8162DA715DB00617249 /* PresentationToUiMapper.swift in Sources */,
+				F74DBACA2DA849DF003B71F6 /* StringUtil.swift in Sources */,
+				F74DBAC42DA82708003B71F6 /* PeopleListErrorPresentationToUiExceptionMapper.swift in Sources */,
 				F74CB81B2DA7173D00617249 /* PersonDetailUiModel.swift in Sources */,
 				F7D7BFF62DA60ECA007A76AF /* ContentView.swift in Sources */,
 				F74CB81D2DA718E000617249 /* PeopleUiModel.swift in Sources */,
@@ -274,6 +322,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F74DBAC02DA825DE003B71F6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F74DBAC12DA825DE003B71F6 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7555FFA3242A565B00829871 /* Debug */ = {

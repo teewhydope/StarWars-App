@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  iosApp
+
+  Created by ibrahim animasahun on 10/04/2025.
+  Copyright © 2025 orgName. All rights reserved.
+*/
+
+"no_internet_error" = "No internet connection.";
+"error_timeout_description" = "The request timed out.";
+"error_unknown_description" = "An unknown error occurred.";
+"ok_description" = "OK";
+"loading_description" = "Loading...";
+"alert_description" = "Alert";
+
+
+
