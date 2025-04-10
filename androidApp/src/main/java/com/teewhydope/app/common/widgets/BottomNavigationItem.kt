@@ -3,6 +3,7 @@ package com.teewhydope.app.common.widgets
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Search
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.teewhydope.app.ui.route.People
 import com.teewhydope.app.ui.route.Starships
@@ -22,7 +23,7 @@ data class BottomNavigationItem(
             ),
             BottomNavigationItem(
                 label = "Starships",
-                icon = Icons.Filled.Search,
+                icon = Icons.Filled.Star,
                 route = Starships
             ),
         )

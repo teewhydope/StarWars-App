@@ -1,32 +1,14 @@
 package com.teewhydope.app.ios.data.dependencyinjection
 
-import com.teewhydope.app.domain.common.usecase.UseCaseExecutor
-import com.teewhydope.app.ios.data.dependencyinjection.authentication.AuthenticationRepositoryProvider
-import com.teewhydope.app.ios.data.dependencyinjection.authentication.AuthenticationUseCaseFactory
-import com.teewhydope.app.ios.data.dependencyinjection.network.NetworkDataModule
+import com.teewhydope.app.di.initKoin
 import com.teewhydope.app.logger.GlobalLogger
 import com.teewhydope.app.logger._globalLogger
-import kotlinx.coroutines.MainScope
+import org.koin.core.component.KoinComponent
 
-class AppDIContainer(
-    iOSGlobalLogger: GlobalLogger,
-) {
-    init {
-        _globalLogger = iOSGlobalLogger
+class AppDIContainer : KoinComponent {
+
+    fun initKoinModules() {
+        initKoin()
     }
-
-    private val networkDataModule = NetworkDataModule()
-
-    val useCaseExecutor = UseCaseExecutor(coroutineScope = MainScope())
-
-    private val networkClient = networkDataModule.networkClient
-
-    private val authenticationRepository = AuthenticationRepositoryProvider(
-        networkClient = networkClient
-    ).characterRepository
-
-    val authentication = AuthenticationUseCaseFactory(
-        characterRepository = authenticationRepository
-    )
 }
 

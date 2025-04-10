@@ -19,8 +19,8 @@ class CharacterService(private val httpClient: HttpClient) {
 
             url {
                 protocol = URLProtocol.HTTPS
-                host = "swapi.dev/api"
-                path("people")
+                host = "swapi.dev"
+                path("api/people")
             }
         }
 
@@ -35,8 +35,8 @@ class CharacterService(private val httpClient: HttpClient) {
 
             url {
                 protocol = URLProtocol.HTTPS
-                host = "swapi.dev/api"
-                path("people/$id")
+                host = "swapi.dev"
+                path("api/people/$id")
             }
         }
         return response.body()
@@ -48,8 +48,8 @@ class CharacterService(private val httpClient: HttpClient) {
 
             url {
                 protocol = URLProtocol.HTTPS
-                host = "rawcdn.githack.com/akabab/starwars-api/0.2.1/api"
-                path("id/$id.json")
+                host = "rawcdn.githack.com"
+                path("akabab/starwars-api/0.2.1/api/id/$id.json")
             }
         }
         return response.body()

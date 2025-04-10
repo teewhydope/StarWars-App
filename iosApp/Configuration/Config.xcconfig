@@ -10,6 +10,6 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 TEAM_ID=
-BUNDLE_ID=com.teewhydope.app.joyfin.ios
-APP_NAME=JoyFin
+BUNDLE_ID=com.teewhydope.app.starwars.ios
+APP_NAME=StarWars
 
