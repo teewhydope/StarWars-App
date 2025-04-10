@@ -23,3 +23,5 @@ A Kotlin Multiplatform Mobile Project that demonstrates code sharing between iOS
 ```
 > ./gradlew common:ios-data:build 
 ```
+
+<img src="https://github.com/teewhydope/StarWars-App/blob/main/assets/Screenshot_20250410_010216.png" width="200">  <img src="https://github.com/teewhydope/StarWars-App/blob/main/assets/Simulator%20Screenshot%20-%20iPhone%2016%20-%202025-04-10%20at%2000.59.18.png" width="200">
